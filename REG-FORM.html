@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT REGISTRATION FORM</title>
+    <link rel="stylesheet" href="REG-FORM.css">
+</head>
+<body>
+
+    <div class="container">
+
+                        <!--IMAGE -->
+        <header>
+            <img src="images.jpg" alt="Uni-img" class="image">
+        </header>
+
+                          <!--FORM-->
+        <form class="reg-form">
+
+                        <!--MAIN HEADING-->
+            <h1 >Student Registration form</h1>
+
+                     <!--Personal Information-->
+            <h2 class="heading">Personal Information</h2>
+          
+            <input type="text"  placeholder="First Name" class="half-width" required>
+            <input type="text"  placeholder="Last Name" class="half-width"  required>
+            <br>
+            <input type="text" placeholder="Date of Birth" class="half-width" required>
+            <input type="text" placeholder="Nationality" class="half-width" required>
+          
+            <h3 class="sub-headings" >Gender</h3>
+            
+            <table>
+                <tr>
+                    <td> <input type="checkbox" value="Female" name="gender">Female </td>
+                    <td> <input type="checkbox" value="Male" name="gender">Male </td>
+                </tr>
+        
+                <tr>
+                    <td> <input type="checkbox" value="Transgender female" name="gender">Transgender female</td>
+                    <td> <input type="checkbox" value="Transgender male" name="gender">Transgender male </td>
+                </tr>
+        
+                <tr>
+                    <td><input type="checkbox" value="Non-binary" name="gender">Non-binary </td>
+                    <td><input type="checkbox" value="Prefer not to say" name="gender">Prefer not to say </td>
+                </tr>
+        
+                <tr>
+                    <td><input type="checkbox" value="Intersex" name="gender">Intersex </td>
+                    <td><input type="checkbox" value="Other" name="gender">Other </td>
+                </tr>
+        
+            </table>
+                       <!--CONTACT INFORMATION-->
+            <h2 class="heading">Contact Information</h2>
+
+            <input type="email" placeholder="Email Address" class="half-width" required>
+            <input type="tel" placeholder="Phone Number" class="half-width" required>
+            <br>
+            <input type="text" placeholder="Street Address" class="full-width" required>
+            <br>
+            <input type="text"  placeholder="City" class="half-width" required>
+            <input type="text"  placeholder="state/ Province/Region" class="half-width" required>
+            <br>
+            <input type="text"   placeholder="Postal/ ZipCode"  class="half-width"required>
+            <input type="text"  placeholder="Country" class="half-width" required>
+            
+                     <!--ENROLLEMENT DETAILS-->
+            <h2 class="heading">Enrollment Details</h2>
+
+            <h3 class="sub-headings" >Enrollment Type</h3>
+            <input type="radio" class="radio" value="Full-time" name="Enrollment Type">Full-time
+            <br>
+            <input type="radio" class="radio" value="Part-time" name="Enrollment Type">Part-time
+           
+            <h3 class="sub-headings" >Program of Study</h3>
+
+            <select name="Programs" class="full-width" ></select>
+            <br>
+
+            <input type="text" placeholder="Student ID Number" class="half-width" required>
+            <input type="text" placeholder="Expected Graduation Year" class="half-width" required>
+
+                         <!--EMERGENCY CONTACT-->
+            <h2 class="heading">Emergency Contact</h2>
+
+            <input type="text" placeholder="Full Name" class="full-width" required>
+             <br>
+             <input type="text" placeholder="Relationship to Student" class="half-width" required>
+             <input type="tel" placeholder="Phone Number" class="half-width" required>
+           
+                            <!-- PREVIOUS EDUCATION -->
+                <h2 class="heading">Previous Education</h2>
+                
+                <input type="text" placeholder="School/ Institute Name" class="half-width" required>
+                <input type="text"  placeholder="Program/ Major" class="half-width" required>
+                <br>
+                <input type="text" placeholder="Years Attended" class="half-width" required>
+                <input type="text"  placeholder="Degree Earned" class="half-width" required>
+           
+
+                            <!-- ADDITIONAL INFORMATION -->
+                <h2 class="heading">Additional Information</h2>
+    
+                <textarea name="skills" placeholder="Additional skills and certifications" class="full-width"></textarea>
+                <textarea name="disabilities" placeholder="Disabilities or special needs" class="full-width"></textarea>
+    
+                <h3 class="sub-headings" >Passport-sized Photo Upload</h3>
+                 <input type="file" name="photo" accept="image/*" class="full-width">
+                 <br>
+                 <button type="submit">Submit</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>
